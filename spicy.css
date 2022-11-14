@@ -1,0 +1,139 @@
+:root{
+    --yellow:#FFC54D;
+    --red:crimson;
+    --white:whitesmoke;
+    --green:#53BF9D;
+}
+i{
+    margin: 10px;
+}
+.menu{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(248px,1fr)); ;
+    justify-content: space-around;
+    background: linear-gradient(to right, rgb(100,100,100),rgb(53,52,52));
+    color:var(--white) ;
+}
+#menuheading,#locations{
+    background: linear-gradient(to right, rgb(100,100,100),rgb(53,52,52));
+    color: var(--red);
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+}
+table{
+    width: 100%;
+    padding: 1rem;
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top: .8rem;
+}
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+.menu th{
+    color: var(--green);
+    font-size: 25px;
+}
+.locations{
+    background: linear-gradient(to right, rgb(100,100,100),rgb(53,52,52));
+    color:var(--white);
+    display: flex;  
+    flex-wrap: wrap; 
+}
+.locations h2{
+    font-size: 20px;
+    color: var(--green);
+    margin-bottom: 10px;
+    text-align: center;
+}
+.locations div{
+    flex: 1;
+    min-width: 303px;
+    margin-bottom: 20px;
+}
+address{
+    text-align: center;
+}
+
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.landing{
+    background-image:url(../chilly.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--white);
+}
+header a{
+    text-decoration: none;
+    color: var(--yellow);
+}
+header{
+    display: flex;
+    column-gap: 100px;
+    padding: 1.2rem;
+    flex-wrap: wrap;
+}
+#logo{
+    flex: 3;
+    font-size: 1.5rem;
+}
+nav{
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+nav a{
+    flex: auto;
+    flex-shrink: 0;
+    /* flex-wrap: wrap; */
+}
+nav a:hover{
+    color: var(--green);
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: center;
+    padding: 2rem;
+}
+.tagline1{
+    color: var(--red);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.tagline2{
+    color: var(--yellow);
+}
+.maintext div{
+    margin-top: 2rem;
+}
+.btn button{
+    width: 20vw;
+    height: 50px;
+    border-radius: 20px;
+    padding: 1rem;
+    background-color: var(--green);
+    border: solid 1px var(--green);
+}
+.btn button:hover{
+    background-color: aquamarine;
+}
+footer{
+    background-color: rgb(66, 60, 60);
+    color: var(--white);
+    text-align: center;
+    height: 30px;
+    font-size: 90%;
+}
