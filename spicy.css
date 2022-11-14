@@ -67,7 +67,7 @@ body,h2{
     font-family: Arial, Helvetica, sans-serif;
 }
 .landing{
-    background-image:url(chilly.jpg);
+    background-image:url(hotel/chilly.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
